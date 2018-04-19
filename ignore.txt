@@ -1,0 +1,8 @@
+.config
+.git
+.gitignore
+ignore.txt
+README.md
+setup.sh
+setup_vim.sh
+setup_zsh.sh
