@@ -42,5 +42,8 @@ inoremap <silent> <C-S>         <C-O>:update<CR>
 
 " plugins
 call plug#begin('~/.vim/plugged')
+    Plug 'tpope/vim-fugitive'
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 call plug#end()
