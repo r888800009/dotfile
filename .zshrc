@@ -36,9 +36,11 @@ alias vim="stty stop '' -ixoff; vim"
 
 zstyle -e ':completion:*:default' list-colors 'reply=("${PREFIX:+=(#bi)($PREFIX:t)(?)*==01=02}:${(s.:.)LS_COLORS}")'
 
-#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.antigen/antigen.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+#mingw
+alias mingw-gcc=i686-w64-mingw32-gcc
