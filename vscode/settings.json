@@ -1,0 +1,9 @@
+{
+    "git.autofetch": true,
+    //"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    //"terminal.integrated.shell.windows": "cmd.exe",
+    //"python.linting.pylintPath": "pylint3"
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\wsl.exe",
+    "terminal.integrated.shell.linux": "zsh"
+    
+}
