@@ -39,6 +39,8 @@ noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
 
+noremap <2-LeftMouse> *
+inoremap <2-LeftMouse> <c-o>*
 
 " plugins
 call plug#begin('~/.vim/plugged')
@@ -50,4 +52,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'valloric/youcompleteme'
     Plug 'tpope/vim-surround'
     Plug 'scrooloose/syntastic'
-call plug#end()
+    Plug 'majutsushi/tagbar'
+    call plug#end()
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
