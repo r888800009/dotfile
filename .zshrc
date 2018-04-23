@@ -15,10 +15,11 @@ setopt menu_complete
 # End of lines added by compinstall
 
 #zsh histoty
-SAVEHIST=500
+SAVEHIST=2000
 HISTFILE=~/.zsh_history
-setopt appendhistory
-
+#setopt appendhistory
+setopt inc_append_history
+setopt share_history
 #git
 zstyle ':vcs_info:*' enable git
 precmd() {
