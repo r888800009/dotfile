@@ -33,6 +33,7 @@ fi
 export EDITOR=vim
 alias vim="stty stop '' -ixoff; vim"
 
+bindkey -v
 
 zstyle -e ':completion:*:default' list-colors 'reply=("${PREFIX:+=(#bi)($PREFIX:t)(?)*==01=02}:${(s.:.)LS_COLORS}")'
 
