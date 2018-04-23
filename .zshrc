@@ -88,3 +88,8 @@ export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 #zsh
 setopt autocd correctall
+
+
+#wpa_cli
+alias wifi="bash ~/r809Script/wifi.sh"
+
