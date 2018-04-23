@@ -6,6 +6,7 @@ sxhkd &
 compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc --unredir-if-possible &
 dnust &
 fcitx-autostart &
+xrandr --output $monitor1 --auto --output $monitor2 $monitorOpt $monitor1 &
 polybar r809 &
 feh --randomize --bg-fill ~/Pictures/Wallpapers/* &
 bash ~/r809Script/TouchpadInit.sh  &
