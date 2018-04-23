@@ -7,7 +7,7 @@ fcitx-autostart &
 polybar r809 &
 feh --randomize --bg-fill ~/Pictures/Wallpapers/* &
 bash ~/r809Script/TouchpadInit.sh  &
-
+randr --dpi 144 &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
