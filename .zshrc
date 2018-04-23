@@ -34,7 +34,13 @@ gitPrefix="%F{1}%r/%S%f %F{4}%b%f"
 
 zstyle ':vcs_info:git*' formats "$gitPrefix"
 zstyle ':vcs_info:git*' actionformats "$gitPrefix (%a)"
-zstyle ':vcs_info:*' nvcsformats "$RPROMPT"
+
+if [ ! $RPROMPT ];then
+    zstyle ':vcs_info:*' nvcsformats "$RPS1"
+else
+    zstyle ':vcs_info:*' nvcsformats "$RPROMPT"
+fi 
+
 RPROMPT='${vcs_info_msg_0_}'
 #vim
 export EDITOR=vim
