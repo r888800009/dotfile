@@ -9,15 +9,15 @@ compinit
 promptinit
 # This will set the default prompt to the walters theme
 prompt walters
-#zstyle ":completion:*:commands" rehash 1
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' menu select
 setopt menu_complete
 # End of lines added by compinstall
 
-SAVEHIST=100
+#zsh histoty
+SAVEHIST=500
 HISTFILE=~/.zsh_history
-
+setopt appendhistory
 
 #git
 zstyle ':vcs_info:*' enable git
@@ -84,3 +84,6 @@ export LESS_TERMCAP_so=$'\E[01;44;33m' # begin reverse video
 export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
+
+#zsh
+setopt autocd correctall
