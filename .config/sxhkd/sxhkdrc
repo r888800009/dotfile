@@ -127,4 +127,7 @@ super + {Left,Down,Up,Right}
 XF86TouchpadToggle
     bash ~/r809Script/TouchpadToggle.sh 
 
+#screenshot
+Print
+    flameshot gui
 
