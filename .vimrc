@@ -47,7 +47,7 @@ inoremap <silent> <C-S>         <C-O>:update<CR>
 noremap <2-LeftMouse> *
 inoremap <2-LeftMouse> <c-o>*
 
-" plugins
+" plugin
 call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -62,7 +62,15 @@ call plug#begin('~/.vim/plugged')
     Plug 'honza/vim-snippets'
     Plug 'junegunn/vim-easy-align'
 call plug#end()
+
+"airline
 let g:airline#extensions#tabline#enabled = 1
+if &term=="linux"
+    let g:airline_theme='solarized'
+else
+    let g:airline_theme='vice'
+endif
+
 
 "ycm
 let g:ycm_confirm_extra_conf = 0
