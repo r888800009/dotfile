@@ -1,5 +1,5 @@
 set background=dark
-
+set fileencodings=utf8,big5
 set t_Co=16
 set nocompatible
 set tabstop=4
@@ -53,6 +53,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
     Plug 'scrooloose/syntastic'
     Plug 'majutsushi/tagbar'
-    call plug#end()
+    Plug 'sirver/ultisnips'
+    Plug 'honza/vim-snippets'
+call plug#end()
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+
+let g:UltiSnipsExpandTrigger="<c-d>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
