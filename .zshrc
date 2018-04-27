@@ -17,9 +17,11 @@ setopt menu_complete
 #zsh histoty
 SAVEHIST=2000
 HISTFILE=~/.zsh_history
-#setopt appendhistory
 setopt inc_append_history
 setopt share_history
+#zsh
+
+setopt HIST_IGNORE_DUPS
 #git
 zstyle ':vcs_info:*' enable git
 precmd() {
