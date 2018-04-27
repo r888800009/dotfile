@@ -1,6 +1,5 @@
 set background=dark
 set fileencodings=utf8,big5
-set t_Co=16
 set nocompatible
 set tabstop=4
 set shiftwidth=4
@@ -10,6 +9,9 @@ set ai
 set nowrap
 set hlsearch
 set cursorline
+set wildmenu
+
+set t_Co=16
 if &term!="linux"
     set t_Co=256
     hi CursorLine ctermfg=none ctermbg=8 cterm=none
@@ -58,7 +60,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'majutsushi/tagbar'
     Plug 'sirver/ultisnips'
     Plug 'honza/vim-snippets'
+    Plug 'junegunn/vim-easy-align'
 call plug#end()
+let g:airline#extensions#tabline#enabled = 1
 
 "ycm
 let g:ycm_confirm_extra_conf = 0
