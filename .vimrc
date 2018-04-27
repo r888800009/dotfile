@@ -12,7 +12,7 @@ set hlsearch
 set cursorline
 if &term!="linux"
     set t_Co=256
-    hi CursorLine ctermfg=none ctermbg=8
+    hi CursorLine ctermfg=none ctermbg=8 cterm=none
 endif
 
 highlight LineNr ctermfg=15 ctermbg=none
@@ -33,8 +33,11 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
+"key maps
+map <silent> <C-PageUp>   :bp<CR>
+map <silent> <C-PageDown> :bn<CR>
 
-"key noremap
+"key remap
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
@@ -56,9 +59,20 @@ call plug#begin('~/.vim/plugged')
     Plug 'sirver/ultisnips'
     Plug 'honza/vim-snippets'
 call plug#end()
+
+"ycm
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 
+"UltiSnips
 let g:UltiSnipsExpandTrigger="<c-d>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+
+" gvim
+highlight Normal guifg=white guibg=black
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
