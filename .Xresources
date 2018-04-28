@@ -1,1 +1,17 @@
 Xft.dpi:120
+*dpi:120
+UXTerm.termName: xterm-256color
+UXTerm.vt100.backarrowKey: false
+UXTerm.ttyModes: erase ^?
+UXTerm.vt100.foreground:white 
+UXTerm.vt100.background:rgb:0/0/02
+UXTerm.vt100.faceName: Noto Sans Mono:style=Regular:size=10
+
+URxvt*depth: 32
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyOutput: false
+URxvt.font:xft:Noto Sans Mono :size=10, xft:Noto Sans Mono CJK TC:size=10:antialias=true:hinting=true 
+URxvt*foreground:white 
+URxvt*background:rgba:0000/0000/0200/c800
+URxvt.cursorBlink: 1
+URxvt.scrollBar: false
