@@ -70,10 +70,9 @@ bindkey "${terminfo[kdch1]}" delete-char
 if [[ $TERM == xterm-termite ]]; then
   . /etc/profile.d/vte.sh
   __vte_osc7
-  bindkey "^[[H" beginning-of-line
-  bindkey "^[[F" end-of-line
 fi
-
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
 #unix tools
 alias ls='ls --color=auto'
 alias diff='diff --color=auto'
