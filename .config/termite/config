@@ -1,7 +1,6 @@
 [options]
 
-font=Noto sans CJK TC 10 
-font=noto sans mono 10
+font=monospace 10 
 [colors]
 foreground = #ffffff
 background = rgba(0,0,2,0.8)
