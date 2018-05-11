@@ -129,8 +129,8 @@ XF86TouchpadToggle
 
 #screenshot
 Print
-    maim -s ~/Pictures/Screenshots/select$(date +%F-%H%M%S).png
+    maim -s ~/Pictures/Screenshots/select$(date +%F-%H%M%S).png --hidecursor
 
 Print + ctrl
-    maim -s | xclip -selection clipboard -t image/png 
+    maim -s --hidecursor| xclip -selection clipboard -t image/png
 
