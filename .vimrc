@@ -39,11 +39,7 @@ endif
 map <silent> <C-PageUp>   :bp<CR>
 map <silent> <C-PageDown> :bn<CR>
 
-"key remap
-noremap <silent> <C-S>          :update<CR>
-vnoremap <silent> <C-S>         <C-C>:update<CR>
-inoremap <silent> <C-S>         <C-O>:update<CR>
-
+"vim mouse select
 noremap <2-LeftMouse> *
 inoremap <2-LeftMouse> <c-o>*
 
