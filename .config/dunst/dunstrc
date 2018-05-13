@@ -285,12 +285,6 @@
 # to "".
 # NOTE: It might be helpful to run dunst -print in a terminal in order
 # to find fitting options for rules.
-
-[sound]
-    summary = "*"
-    script =  ~/r809Script/alert.sh
-
-
 #[espeak]
 #    summary = "*"
 #    script = dunst_espeak.sh
