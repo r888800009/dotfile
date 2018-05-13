@@ -7,8 +7,6 @@ zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz compinit promptinit vcs_info
 compinit
 promptinit
-# This will set the default prompt to the walters theme
-prompt walters
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' menu select
 setopt menu_complete
@@ -20,7 +18,6 @@ HISTFILE=~/.zsh_history
 setopt inc_append_history
 setopt share_history
 #zsh
-
 setopt HIST_IGNORE_DUPS
 #git
 zstyle ':vcs_info:*' enable git
@@ -37,12 +34,7 @@ gitPrefix="%F{1}%r/%S%f %F{4}%b%f"
 
 zstyle ':vcs_info:git*' formats "$gitPrefix"
 zstyle ':vcs_info:git*' actionformats "$gitPrefix (%a)"
-
-if [ ! $RPROMPT ];then
-    zstyle ':vcs_info:*' nvcsformats "$RPS1"
-else
-    zstyle ':vcs_info:*' nvcsformats "$RPROMPT"
-fi 
+zstyle ':vcs_info:*' nvcsformats "%F{2}%~%f"
 
 RPROMPT='${vcs_info_msg_0_}'
 #vim
@@ -93,4 +85,3 @@ setopt autocd correct
 
 #wpa_cli
 alias wifi="bash ~/r809Script/wifi.sh"
-
