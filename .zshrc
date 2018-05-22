@@ -85,3 +85,6 @@ setopt autocd correct
 
 #wpa_cli
 alias wifi="bash ~/r809Script/wifi.sh"
+
+#task reminder
+printf "you have %d tasks\n" $(task count status:pending)
