@@ -9,11 +9,11 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #00ffffff
-background-alt = #00ffffff
+background = #222
+background-alt = #222
 ;foreground = ${xrdb:color7:#222}
-foreground = #111
-foreground-alt = #111
+foreground = #bbb
+foreground-alt = #bbb
 primary = #ffb52a
 secondary = #a60053
 alert = #aa0017
@@ -34,7 +34,7 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 4
+border-size = 0
 border-color = #00000000
 
 padding-left = 0
@@ -54,7 +54,7 @@ modules-right = filesystem xbacklight volume memory cpu wlan eth battery tempera
 
 tray-position = right
 tray-padding = 2
-tray-transparent = true
+tray-transparent = false
 tray-background = ${colors.background}
 
 ;if polybar cover fullscreen
