@@ -151,4 +151,6 @@ XF86AudioMute
 super + shift + n
     bspc desktop focused --rename $(zenity --entry --text="Please enter a new desktop name")
 
-
+#show sxhkdrc
+super + shift + slash
+	alacritty -e vim ~/dotfile/.config/sxhkd/sxhkdrc
