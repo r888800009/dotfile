@@ -122,7 +122,6 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-
 #touchpad toggle
 XF86TouchpadToggle
     bash ~/r809Script/TouchpadToggle.sh 
@@ -133,11 +132,13 @@ Print
 
 Print + ctrl
     maim -s --hidecursor| xclip -selection clipboard -t image/png
+
 #brightness
 XF86MonBrightnessDown
     xbacklight -5
 XF86MonBrightnessUp
     xbacklight +5
+
 #volume
 XF86AudioLowerVolume
     pactl set-sink-volume 0 -5%
@@ -145,3 +146,9 @@ XF86AudioRaiseVolume
     pactl set-sink-volume 0 +5%
 XF86AudioMute
     pactl set-sink-mute 0 toggle
+
+#rename desktop
+super + shift + n
+    bspc desktop focused --rename $(zenity --entry --text="Please enter a new desktop name")
+
+
