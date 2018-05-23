@@ -134,10 +134,8 @@ Print + ctrl
     maim -s --hidecursor| xclip -selection clipboard -t image/png
 
 #brightness
-XF86MonBrightnessDown
-    xbacklight -5
-XF86MonBrightnessUp
-    xbacklight +5
+XF86MonBrightness{Down,Up}
+    xbacklight {-5, +5}
 
 #volume
 XF86AudioLowerVolume
