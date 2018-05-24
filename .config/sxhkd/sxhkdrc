@@ -148,6 +148,11 @@ XF86AudioMute
 #rename desktop
 super + shift + n
     bspc desktop focused --rename $(zenity --entry --text="Please enter a new desktop name")
+#move desktop
+super + ctrl + shift + bracket{left,right}
+    bspc desktop --bubble {prev,next}
+super + ctrl + shift + {Prior,Next}
+    bspc desktop --bubble {prev,next}
 
 #show sxhkdrc
 super + shift + slash
