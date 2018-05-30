@@ -69,6 +69,7 @@ bindkey "^[[F" end-of-line
 alias ls='ls --color=auto'
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
+alias dmesg='dmesg --color=always'
 
 export LESS=-R
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
