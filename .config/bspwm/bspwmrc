@@ -4,7 +4,7 @@
 source ~/.r809env 
 xrandr --output $monitor1 --auto --output $monitor2 $monitorOpt $monitor1 
 sxhkd &
-compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc --unredir-if-possible &
+compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc --unredir-if-possible --blur-background&
 dnust &
 fcitx-autostart &
 polybar r809 &
