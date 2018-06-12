@@ -12,7 +12,7 @@ feh --randomize --bg-fill ~/Pictures/Wallpapers/* &
 bash ~/r809Script/TouchpadInit.sh  &
 randr --dpi 120 &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor -d 雜項 通訊 III IV V VI VII VIII IX X
 
 
 bspc config border_width         0
