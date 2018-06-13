@@ -1,0 +1,36 @@
+
+configuration {
+
+    sidebar-mode: true;
+}
+
+* {
+    background-color: transparent;
+    text-color: #eee;
+    font: "DejaVu Sans Mono 15";
+}
+    
+window {
+    background-color: #222A;
+    transparent: true;
+	height:		 100%;
+	width:		 100%;
+
+}
+
+mainbox {
+    padding: 6%;
+}
+
+listview {
+    dynamic: false;
+}
+
+element selected {
+    background-color: #555A;
+    text-color: #fff;
+}
+
+element {
+    margin: 0 3 3 50px;
+}
