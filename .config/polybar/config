@@ -64,9 +64,6 @@ wm-restack = bspwm
 ;override-redirect = true
 
 
-
-
-
 cursor-click = pointer
 cursor-scroll = ns-resize
 
@@ -187,7 +184,6 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-
 ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
@@ -258,12 +254,12 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/battery
 battery = BAT0
 adapter = AC0
-full-at = 98
+full-at = 97
 
-format-charging = <animation-charging> <label-charging>
+format-charging = "%{A1:notify-send "$(acpi)":}<animation-charging> <label-charging>%{A}"
 format-charging-underline = #ffb52a
 
-format-discharging = <ramp-capacity> <label-discharging>
+format-discharging = "%{A1:notify-send "$(acpi)":}<ramp-capacity> <label-discharging>%{A}"
 format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = ""
