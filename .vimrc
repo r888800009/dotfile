@@ -1,5 +1,5 @@
 set background=dark
-set fileencodings=utf8,big5
+set fileencodings=utf8,big5,utf-16le
 set nocompatible
 set tabstop=4
 set shiftwidth=4
