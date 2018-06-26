@@ -20,6 +20,7 @@ setopt share_history
 #zsh
 setopt HIST_IGNORE_DUPS
 setopt autocd correct
+bindkey -e
 #git
 zstyle ':vcs_info:*' enable git
 precmd() {
