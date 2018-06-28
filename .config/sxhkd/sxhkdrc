@@ -124,7 +124,7 @@ super + {Left,Down,Up,Right}
 
 #touchpad toggle
 XF86TouchpadToggle
-    bash ~/r809Script/TouchpadToggle.sh 
+    bash ~/bin/TouchpadToggle 
 
 #screenshot
 Print
