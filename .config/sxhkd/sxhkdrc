@@ -124,7 +124,7 @@ super + {Left,Down,Up,Right}
 
 #touchpad toggle
 XF86TouchpadToggle
-    bash ~/bin/TouchpadToggle 
+    TouchpadToggle 
 
 #screenshot
 Print
@@ -157,3 +157,8 @@ super + ctrl + shift + {Prior,Next}
 #show sxhkdrc
 super + shift + slash
 	alacritty -e vim ~/dotfile/.config/sxhkd/sxhkdrc
+
+#wifi dmenu
+super + shift + w 
+    wifi-dmenu
+
