@@ -89,3 +89,6 @@ printf "you have %d tasks\n" $(task count status:pending)
 
 # home bin
 export PATH=~/bin:$PATH
+
+# git-summary
+alias git-summary='~/.git-summary/git-summary'
