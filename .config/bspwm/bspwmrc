@@ -9,7 +9,7 @@ dnust &
 fcitx-autostart &
 polybar r809 &
 feh --randomize --bg-fill ~/Pictures/Wallpapers/* &
-bash ~/r809Script/TouchpadInit.sh  &
+bash ~/bin/TouchpadInit  &
 randr --dpi 120 &
 
 bspc monitor -d 雜項 通訊 III IV V VI VII VIII IX X
@@ -30,4 +30,3 @@ bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
-

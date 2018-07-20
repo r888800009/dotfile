@@ -19,6 +19,8 @@ setopt inc_append_history
 setopt share_history
 #zsh
 setopt HIST_IGNORE_DUPS
+setopt autocd correct
+bindkey -e
 #git
 zstyle ':vcs_info:*' enable git
 precmd() {
@@ -41,7 +43,6 @@ RPROMPT='${vcs_info_msg_0_}'
 export EDITOR=vim
 alias vim="stty stop '' -ixoff; vim"
 
-bindkey -v
 
 #antigen
 source ~/.antigen/antigen.zsh
@@ -66,6 +67,9 @@ if [[ $TERM == xterm-termite ]]; then
 fi
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
+
 #unix tools
 alias ls='ls --color=auto'
 alias diff='diff --color=auto'
@@ -81,12 +85,8 @@ export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
-#zsh
-setopt autocd correct
-
-
-#wpa_cli
-alias wifi="bash ~/r809Script/wifi.sh"
-
 #task reminder
 printf "you have %d tasks\n" $(task count status:pending)
+
+# home bin
+export PATH=~/bin:$PATH

@@ -5,3 +5,6 @@ export EDITOR=vim
 export XDG_CONFIG_HOME="$HOME/.config"
 export _JAVA_OPTIONS='-Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true '
 export _JAVA_AWT_WM_NONREPARENTING=1
+
+# home bin
+export PATH=~/bin:$PATH

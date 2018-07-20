@@ -124,7 +124,7 @@ super + {Left,Down,Up,Right}
 
 #touchpad toggle
 XF86TouchpadToggle
-    bash ~/r809Script/TouchpadToggle.sh 
+    TouchpadToggle 
 
 #screenshot
 Print
@@ -147,7 +147,7 @@ XF86AudioMute
 
 #rename desktop
 super + shift + n
-    bspc desktop focused --rename $(zenity --entry --text="Please enter a new desktop name")
+    bspwm-rename
 #move desktop
 super + ctrl + shift + bracket{left,right}
     bspc desktop --bubble {prev,next}
@@ -157,3 +157,8 @@ super + ctrl + shift + {Prior,Next}
 #show sxhkdrc
 super + shift + slash
 	alacritty -e vim ~/dotfile/.config/sxhkd/sxhkdrc
+
+#wifi dmenu
+super + shift + w 
+    wifi-dmenu
+
