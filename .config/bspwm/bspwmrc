@@ -7,7 +7,7 @@ sxhkd &
 compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc --unredir-if-possible --blur-background&
 dnust &
 fcitx-autostart &
-polybar r809 &
+polybar-all-screen &
 feh --randomize --bg-fill ~/Pictures/Wallpapers/* &
 bash ~/bin/TouchpadInit  &
 randr --dpi 120 &
