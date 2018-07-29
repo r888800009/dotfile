@@ -55,6 +55,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 #mingw
 alias mingw-gcc=i686-w64-mingw32-gcc
+alias mingw-g++=i686-w64-mingw32-g++
 
 #keybinds
 bindkey "${terminfo[khome]}" beginning-of-line
