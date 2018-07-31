@@ -317,12 +317,14 @@ label-close-foreground = ${colors.secondary}
 label-separator = 
 label-separator-foreground = ${colors.foreground-alt}
 
-menu-0-2 = 
-menu-0-2-exec = menu-open-3
 menu-0-0 = 
 menu-0-0-exec = menu-open-1
 menu-0-1 = 
 menu-0-1-exec = menu-open-2
+menu-0-2 = 
+menu-0-2-exec = menu-open-3
+menu-0-3 = Z
+menu-0-3-exec = menu-open-4
 
 menu-1-0 = 
 menu-1-0-exec = reboot
@@ -339,6 +341,11 @@ menu-3-0 = 
 menu-3-0-exec = bspc quit 
 menu-3-1 = 
 menu-3-1-exec = menu-open-0
+
+menu-4-0 = 
+menu-4-0-exec = systemctl suspend
+menu-4-1 = 
+menu-4-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
