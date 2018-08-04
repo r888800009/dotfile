@@ -93,3 +93,7 @@ export PATH=~/bin:$PATH
 
 # git-summary
 alias git-summary='~/.git-summary/git-summary'
+
+
+# tty clock
+alias tty-clock="tty-clock -c -C4"
