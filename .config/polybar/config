@@ -14,6 +14,8 @@ background-alt = #222
 ;foreground = ${xrdb:color7:#222}
 foreground = #bbb
 foreground-alt = #bbb
+foreground-alt-dark = #777
+
 primary = #ffb52a
 secondary = #a60053
 alert = #aa0017
@@ -107,8 +109,8 @@ label-urgent = %name%![%index%]
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
-label-empty = 
-label-empty-foreground = ${colors.foreground-alt}
+label-empty = %name%[%index%] 
+label-empty-foreground = ${colors.foreground-alt-dark}
 label-empty-padding = 2
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
