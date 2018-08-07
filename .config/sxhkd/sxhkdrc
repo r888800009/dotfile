@@ -155,9 +155,13 @@ super + ctrl + shift + bracket{left,right}
 super + ctrl + shift + {Prior,Next}
     bspc desktop --bubble {prev,next}
 
-# creat new desktop
+# create desktop
 super + shift + m
     bspwm-create
+
+# remove desktop
+super + shift + b
+    bspwm-rm
 
 # show sxhkdrc
 super + shift + slash
