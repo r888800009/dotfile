@@ -122,22 +122,22 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-#touchpad toggle
+# touchpad toggle
 XF86TouchpadToggle
     TouchpadToggle 
 
-#screenshot
+# screenshot
 Print
     maim -s ~/Pictures/Screenshots/select$(date +%F-%H%M%S).png --hidecursor
 
 Print + ctrl
     maim -s --hidecursor| xclip -selection clipboard -t image/png
 
-#brightness
+# brightness
 XF86MonBrightness{Down,Up}
     xbacklight {-5, +5}
 
-#volume
+# volume
 XF86AudioLowerVolume
     pactl set-sink-volume 0 -5%
 XF86AudioRaiseVolume
@@ -145,16 +145,21 @@ XF86AudioRaiseVolume
 XF86AudioMute
     pactl set-sink-mute 0 toggle
 
-#rename desktop
+# rename desktop
 super + shift + n
     bspwm-rename
-#move desktop
+
+# move desktop
 super + ctrl + shift + bracket{left,right}
     bspc desktop --bubble {prev,next}
 super + ctrl + shift + {Prior,Next}
     bspc desktop --bubble {prev,next}
 
-#show sxhkdrc
+# creat new desktop
+super + shift + m
+    bspwm-create
+
+# show sxhkdrc
 super + shift + slash
 	alacritty -e vim ~/dotfile/.config/sxhkd/sxhkdrc
 
