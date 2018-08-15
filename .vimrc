@@ -39,8 +39,6 @@ endif
 map <silent> <C-PageUp>   :bp<CR>
 map <silent> <C-PageDown> :bn<CR>
 
-map <silent> <C-[>   :bp<CR>
-map <silent> <C-]> :bn<CR>
 "vim mouse select
 noremap <2-LeftMouse> *
 inoremap <2-LeftMouse> <c-o>*
