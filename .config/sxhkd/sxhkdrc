@@ -139,11 +139,11 @@ XF86MonBrightness{Down,Up}
 
 # volume
 XF86AudioLowerVolume
-    pactl set-sink-volume 0 -5%
+    amixer set Master  5%-
 XF86AudioRaiseVolume
-    pactl set-sink-volume 0 +5%
+    amixer set Master  5%+
 XF86AudioMute
-    pactl set-sink-mute 0 toggle
+    amixer set Master toggle 
 
 # rename desktop
 super + shift + n
