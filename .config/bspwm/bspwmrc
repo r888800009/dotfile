@@ -12,7 +12,7 @@ feh --randomize --bg-fill ~/Pictures/Wallpapers/* &
 bash ~/bin/TouchpadInit  &
 randr --dpi 120 &
 
-bspc monitor -d 雜項 通訊 
+bspc monitor -d 雜項 通訊 密碼 
 
 
 bspc config border_width         0
@@ -28,3 +28,9 @@ bspc config focus_follows_pointer true
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
+bspc desktop 通訊 --layout monocle 
+bspc rule -a TelegramDesktop desktop='通訊'
+bspc rule -a keepassxc desktop='密碼'
+
+telegram-desktop &
+keepassxc &
