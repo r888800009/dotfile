@@ -90,3 +90,7 @@ set guioptions-=L  "remove left-hand scroll bar
 
 "sudo
 cmap w!! w !sudo tee > /dev/null %
+
+"EasyAlign
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
