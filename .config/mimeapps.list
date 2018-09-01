@@ -1,0 +1,30 @@
+[Added Associations]
+application/xml=urxvt.desktop;
+text/plain=gvim.desktop;vim.desktop;userapp-urxvt-C1ZCHZ.desktop;urxvtc.desktop;
+text/html=chromium.desktop;
+image/png=feh.desktop;gimp.desktop;
+image/jpeg=feh.desktop;gimp.desktop;
+image/svg+xml=chromium.desktop;
+application/x-bzip-compressed-tar=xarchiver.desktop;
+application/x-java-archive=xarchiver.desktop;userapp-java-20BTGZ.desktop;
+application/x-compressed-tar=xarchiver.desktop;
+text/x-lua=gvim.desktop;
+application/x-xz-compressed-tar=xarchiver.desktop;
+application/zip=xarchiver.desktop;
+application/pdf=chromium.desktop;gimp.desktop;
+model/x.stl-binary=gvim.desktop;
+inode/directory=ranger.desktop;
+
+[Default Applications]
+text/plain=userapp-urxvt-C1ZCHZ.desktop
+text/html=chromium.desktop
+x-scheme-handler/http=chromium.desktop
+x-scheme-handler/https=chromium.desktop
+x-scheme-handler/about=chromium.desktop
+x-scheme-handler/unknown=chromium.desktop
+application/vnd.powdertoy.save=powdertoy-tpt-open.desktop
+x-scheme-handler/ptsave=powdertoy-tpt-ptsave.desktop
+image/png=feh.desktop
+image/jpeg=feh.desktop
+inode/directory=ranger.desktop
+
