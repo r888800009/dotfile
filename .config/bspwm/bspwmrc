@@ -1,14 +1,10 @@
 #!/bin/sh
 
-
-source ~/.r809env 
-xrandr --output $monitor1 --auto --output $monitor2 $monitorOpt $monitor1 
+screen-load &
 sxhkd &
 compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc --unredir-if-possible --blur-background&
 dnust &
 fcitx-autostart &
-polybar-all-screen &
-feh --randomize --bg-fill ~/Pictures/Wallpapers/* &
 bash ~/bin/TouchpadInit  &
 randr --dpi 120 &
 
