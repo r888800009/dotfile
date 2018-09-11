@@ -75,12 +75,13 @@ endif
 "ycm
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+let g:ycm_show_diagnostics_ui = 0
+let g:syntastic_cpp_checkers = [ 'gcc' ]
 
 "UltiSnips
 let g:UltiSnipsExpandTrigger="<c-d>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
 
 " gvim
 highlight Normal guifg=white guibg=black
@@ -95,3 +96,4 @@ cmap w!! w !sudo tee > /dev/null %
 "EasyAlign
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
