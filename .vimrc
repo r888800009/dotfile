@@ -36,14 +36,14 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
-"key maps
+" key maps
 map <silent> <C-PageUp>   :bp<CR>
 map <silent> <C-PageDown> :bn<CR>
 
 map <silent> <C-H>   :bp<CR>
 map <silent> <C-L> :bn<CR>
 
-"vim mouse select
+" vim mouse select
 noremap <2-LeftMouse> *
 inoremap <2-LeftMouse> <c-o>*
 
@@ -61,9 +61,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'sirver/ultisnips'
     Plug 'honza/vim-snippets'
     Plug 'junegunn/vim-easy-align'
+    Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 
-"airline
+" airline
 let g:airline#extensions#tabline#enabled = 1
 if &term=="linux"
     let g:airline_theme='solarized'
@@ -72,13 +73,13 @@ else
 endif
 
 
-"ycm
+" ycm
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 let g:ycm_show_diagnostics_ui = 0
 let g:syntastic_cpp_checkers = [ 'gcc' ]
 
-"UltiSnips
+" UltiSnips
 let g:UltiSnipsExpandTrigger="<c-d>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
@@ -90,10 +91,12 @@ set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 
-"sudo
+" sudo
 cmap w!! w !sudo tee > /dev/null %
 
-"EasyAlign
+" EasyAlign
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
+" Better whitespace
+let g:better_whitespace_enabled=1
