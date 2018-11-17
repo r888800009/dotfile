@@ -100,3 +100,8 @@ nmap ga <Plug>(EasyAlign)
 
 " Better whitespace
 let g:better_whitespace_enabled=1
+
+
+
+" fold auto
+set foldmethod=syntax
