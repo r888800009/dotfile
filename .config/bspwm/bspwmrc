@@ -1,12 +1,5 @@
 #!/bin/sh
-
-screen-load &
-sxhkd &
-compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc --unredir-if-possible --blur-background&
-dnust &
-fcitx-autostart &
-bash ~/bin/TouchpadInit  &
-randr --dpi 120 &
+r809-wm-start
 
 bspc monitor -d 雜項 通訊 密碼 
 
