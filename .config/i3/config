@@ -33,7 +33,7 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show combi
@@ -129,6 +129,13 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+
+# touchpad toggle
+bindsym XF86TouchpadToggl exec TouchpadToggle
+
+# screenshot
+bindsym Print exec maim -s ~/Pictures/Screenshots/select$(date +%F-%H%M%S).png --hidecursor
+bindsym Print+ctrl exec maim -s --hidecursor| xclip -selection clipboard -t image/png
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
