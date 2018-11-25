@@ -169,4 +169,4 @@ bindsym $mod+r mode "resize"
 # bar {
 #         status_command polybar-all-screen
 # }
-exec_always --no-startup-id polybar r809-wm-start &
+exec_always --no-startup-id r809-wm-start &
