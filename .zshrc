@@ -85,9 +85,6 @@ export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
-#task reminder
-printf "you have %d tasks\n" $(task count status:pending)
-
 # home bin
 export PATH=~/bin:$PATH
 
