@@ -1,4 +1,6 @@
 #!/bin/sh
+
+sxhkd &
 r809-wm-start
 
 bspc monitor -d 雜項 通訊 密碼 
