@@ -131,11 +131,11 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # touchpad toggle
-bindsym XF86TouchpadToggl exec TouchpadToggle
+bindsym XF86TouchpadToggle exec TouchpadToggle
 
 # screenshot
 bindsym Print exec maim -s ~/Pictures/Screenshots/select$(date +%F-%H%M%S).png --hidecursor
-bindsym Print+ctrl exec maim -s --hidecursor| xclip -selection clipboard -t image/png
+bindsym Ctrl+Print exec maim -s --hidecursor| xclip -selection clipboard -t image/png
 
 #wifi dmenu
 bindsym $mod+Shift+w exec wifi-dmenu
@@ -180,3 +180,9 @@ bindsym $mod+r mode "resize"
 #         status_command polybar-all-screen
 # }
 exec_always --no-startup-id r809-wm-start &
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #4c7899 #285577 #ffffff #ffffff   #285577
+
+default_border pixel 1
+hide_edge_borders smart
