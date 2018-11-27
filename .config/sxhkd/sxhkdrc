@@ -147,7 +147,7 @@ XF86AudioMute
 
 # rename desktop
 super + shift + n
-    bspwm-rename
+    r809-wm-rename
 
 # move desktop
 super + ctrl + shift + bracket{left,right}
