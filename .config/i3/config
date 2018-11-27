@@ -147,6 +147,9 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+# rename workspace
+bindsym $mod+Shift+m exec r809-wm-rename
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -186,3 +189,4 @@ client.focused          #4c7899 #285577 #ffffff #ffffff   #285577
 
 default_border pixel 1
 hide_edge_borders smart
+
