@@ -7,4 +7,4 @@ export _JAVA_OPTIONS='-Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLo
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 # home bin
-export PATH=~/bin:$PATH
+export PATH=~/bin:~/.local/bin:$PATH
