@@ -62,6 +62,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'honza/vim-snippets'
     Plug 'junegunn/vim-easy-align'
     Plug 'ntpeters/vim-better-whitespace'
+    Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 " airline
@@ -101,5 +102,6 @@ nmap ga <Plug>(EasyAlign)
 " Better whitespace
 let g:better_whitespace_enabled=1
 
-
-
+" clang-format
+let g:clang_format#detect_style_file=1
+let g:clang_format#auto_format=1
