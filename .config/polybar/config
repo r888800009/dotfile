@@ -53,7 +53,7 @@ font-3 = "Anonymice Nerd Font:size=11;1"
 
 modules-left = bspwm i3 
 modules-center = 
-modules-right = filesystem xbacklight volume memory cpu wlan eth battery temperature date xkeyboard powermenu 
+modules-right = filesystem xbacklight volume memory cpu wlan eth battery date xkeyboard powermenu
 
 tray-position = right
 tray-padding = 2
@@ -313,25 +313,6 @@ animation-charging-5 = 
 animation-charging-6 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
-
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
-
-format = <ramp> <label>
-format-underline = #f50a4d
-format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
-
-label = %temperature%
-label-warn = %temperature%
-label-warn-foreground = ${colors.secondary}
-
-ramp-2 = 
-ramp-1 = 
-ramp-0 = 
-ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
 type = custom/menu
