@@ -189,4 +189,4 @@ client.focused          #4c7899 #285577 #ffffff #ffffff   #285577
 
 default_border pixel 1
 hide_edge_borders smart
-
+for_window [class="XClock"] floating enable
