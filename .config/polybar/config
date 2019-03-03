@@ -57,7 +57,6 @@ modules-right = filesystem xbacklight volume memory cpu wlan eth battery date xk
 
 tray-position = right
 tray-padding = 2
-tray-transparent = false
 tray-background = ${colors.background}
 
 ;if polybar cover fullscreen
@@ -244,14 +243,17 @@ format-underline = #0a6cf5
 label = %date% %time%
 
 [module/volume]
-type = internal/volume
+type = internal/alsa
 
 format-volume = <ramp-volume> <label-volume> <bar-volume>
 label-volume = 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
-
+speaker-mixer = Speaker
+headphone-mixer = Headphone
+headphone-id = 9
+mapped = true
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = ""
