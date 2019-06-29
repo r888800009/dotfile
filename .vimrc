@@ -1,8 +1,8 @@
 set background=dark
 set fileencodings=utf8,big5,utf-16le
 set nocompatible
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set nu
 set ai
