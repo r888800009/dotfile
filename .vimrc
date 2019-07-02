@@ -36,17 +36,6 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
-" key maps
-map <silent> <C-PageUp>   :bp<CR>
-map <silent> <C-PageDown> :bn<CR>
-
-map <silent> <C-H>   :bp<CR>
-map <silent> <C-L> :bn<CR>
-
-" vim mouse select
-noremap <2-LeftMouse> *
-inoremap <2-LeftMouse> <c-o>*
-
 " plugin
 call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'
