@@ -150,6 +150,9 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # rename workspace
 bindsym $mod+Shift+m exec r809-wm-rename
 
+# show i3 config
+bindsym $mod+Shift+slash exec "alacritty -e vim ~/dotfile/.config/i3/config"
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
