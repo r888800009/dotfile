@@ -13,7 +13,8 @@ setopt menu_complete
 # End of lines added by compinstall
 
 #zsh histoty
-SAVEHIST=2000
+SAVEHIST=4000
+HISTSIZE=$SAVEHIST
 HISTFILE=~/.zsh_history
 setopt inc_append_history
 setopt share_history
