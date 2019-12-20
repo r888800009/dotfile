@@ -1,4 +1,8 @@
 #!/bin/bash
+DIR=$(dirname $0)
+echo set .zshrc
+ln -si $DIR/.zshrc ~/.zshrc
+
 echo install zsh plugin
 mkdir -p ~/.antigen
 curl -L git.io/antigen > ~/.antigen/antigen.zsh
