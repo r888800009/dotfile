@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR=$(dirname $0)
+DIR=$($pwd)
 platform='unknown'
 #setup.sh home dotfile
 for file in $(ls -A $DIR -I ".*.swp"|grep -vFxf $DIR/ignore.txt) 

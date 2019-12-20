@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR=$(dirname $0)
+DIR=$(pwd)
 echo set .zshrc
 ln -si $DIR/.zshrc ~/.zshrc
 
