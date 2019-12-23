@@ -52,6 +52,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/vim-easy-align'
     Plug 'ntpeters/vim-better-whitespace'
     Plug 'rhysd/vim-clang-format'
+    Plug 'SidOfc/mkdx'
 call plug#end()
 
 " airline
