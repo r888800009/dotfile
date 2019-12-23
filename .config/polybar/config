@@ -248,7 +248,7 @@ ramp-volume-1 = 
 ramp-volume-2 = 
 speaker-mixer = Speaker
 headphone-mixer = Headphone
-headphone-id = 9
+headphone-id = ${env:headphone_id}
 mapped = true
 label-volume-foreground = ${root.foreground}
 
