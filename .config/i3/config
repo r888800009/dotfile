@@ -184,6 +184,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Translation
+bindsym $mod+z exec trans-pop-script
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 # bar {
