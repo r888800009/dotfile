@@ -1,6 +1,6 @@
 {
  :translate-shell "0.9.0"
  :verbose         false
- :hl              "zh-tw"
- :tl              ["zh-tw" "en"]
+ :hl              "zh-TW"
+ :tl              ["zh-TW" "en"]
 }
