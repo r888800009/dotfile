@@ -96,3 +96,5 @@ alias git-summary='~/.git-summary/git-summary'
 
 # tty clock
 alias tty-clock="tty-clock -c -C4"
+
+alias pacsyu="sudo pacman -Syu; pacaur -Syu"
