@@ -1,3 +1,32 @@
 patch:
-    "menu/alternative_select_keys": ASDJKL
+    "menu/alternative_select_keys": ASDFG
+    schema/dependencies:
+      - emoji
+    reverse_lookup:
+      dictionary: emoji
+      enable_completion: false
+      prefix: "`"
+      tips: 〔表情〕
 
+    punctuator:
+        half_shape:
+          "!": {commit: "！"}
+          "\"": {pair: ["“", "”"]}
+          "$": ["$", "￥", "€", "£", "¥", "¢", "¤"]
+          "%": ["%", "％", "°", "℃"]
+          "'": {pair: ["‘", "’"]}
+          "*": ["*", "＊", "·", "・", "×", "※", "❂"]
+          ":": ["：", "；"]
+          "<": {commit: "，"}
+          ">": {commit: "。"}
+          "?": ["？", "／", "/", "÷"]
+          "[": ["「", "【", "《", "〔", "［"]
+          "\\": ["、", "\\", "＼"]
+          "]": ["」", "】", "》", "〕", "］"]
+          "^": {commit: "……"}
+          _: ["——", "－", "-"]
+          "`": ["`"]
+          "{": ["『", "〖", "〈", "｛"]
+          "|": ["·", "|", "｜", "§", "¦"]
+          "}": ["』", "〗", "〉", "｝"]
+          "~": "~"

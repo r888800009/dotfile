@@ -1,5 +1,35 @@
 patch:
     schema_list:
         - schema: bopomofo_tw
-    "menu/page_size": 6
+    "menu/page_size": 5
 
+    ascii_composer:
+      Caps_Lock: "commit_text"
+      Shift_L: "commit_code"
+      Shift_R: "commit_code"
+
+    key_binder:
+      bindings:
+        - accept: Tab
+          send: "Page_Down"
+          when: composing
+        - accept: ISO_Left_Tab
+          send: "Page_Up"
+          when: composing
+        - accept: "Shift+Tab" # not working
+          send: "Page_Up"
+          when: composing
+
+        - accept: "Shift+K"
+          send: Page_Up
+          when: composing
+        - accept: "Shift+J"
+          send: Page_Down
+          when: composing
+
+        - accept: "Left"
+          send: "Shift+Left"
+          when: composing
+        - accept: "Right"
+          send: "Shift+Right"
+          when: composing
