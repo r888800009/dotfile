@@ -26,6 +26,12 @@ patch:
         - accept: "Shift+J"
           send: Page_Down
           when: composing
+        - accept: "Shift+H"
+          send: "Shift+Left"
+          when: composing
+        - accept: "Shift+L"
+          send: "Shift+Right"
+          when: composing
 
         - accept: "Left"
           send: "Shift+Left"
