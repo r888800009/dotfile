@@ -11,7 +11,7 @@ patch:
     key_binder:
       bindings:
         - accept: Tab
-          send: "Page_Down"
+          send: "Shift+Right"
           when: composing
         - accept: ISO_Left_Tab
           send: "Page_Up"
