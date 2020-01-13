@@ -39,3 +39,10 @@ patch:
         - accept: "Right"
           send: "Shift+Right"
           when: composing
+
+        - accept: "Control+j"
+          send: "Return"
+          when: composing
+        - accept: "Control+h"
+          send: "BackSpace"
+          when: composing
