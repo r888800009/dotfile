@@ -17,3 +17,11 @@ ln -s $(pwd)/.config/translate-shell ~/.config/translate-shell -f
 ln -s $(pwd)/rime/bopomofo_tw.custom.yaml ~/.config/fcitx/rime -f
 ln -s $(pwd)/rime/default.custom.yaml ~/.config/fcitx/rime -f
 ```
+
+配置newsboat
+``` bash
+ln -s $(pwd)/.config/newsboat/config ~/.config/newsboat/config -f
+```
+
+## problem
+- Make sure to make a symbolic link at `dotfile` repo dir.
