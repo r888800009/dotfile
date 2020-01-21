@@ -103,3 +103,15 @@ alias git-summary='~/.git-summary/git-summary'
 alias tty-clock="tty-clock -c -C4"
 
 alias pacsyu="sudo pacman -Syu; pacaur -Syu"
+
+# menu vim keybind
+zmodload zsh/complist
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+
+# note: use ctrl + f intead right key
+
+# caps lock
+alias caps_lock="xdotool key Caps_Lock"
