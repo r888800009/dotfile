@@ -70,6 +70,16 @@ mode "tmux" {
   bindsym Shift+quotedbl split v mode "default"
 }
 
+bindsym $mod+t mode "hjkl"
+mode "hjkl" {
+  bindsym $mod+t mode "default"
+
+  bindsym --release h exec "xdotool key Left"
+  bindsym --release j exec "xdotool key Down"
+  bindsym --release k exec "xdotool key Up"
+  bindsym --release l exec "xdotool key Right"
+}
+
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
