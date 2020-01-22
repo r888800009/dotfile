@@ -204,3 +204,7 @@ default_border pixel 1
 hide_edge_borders smart
 for_window [class="XClock"] floating enable
 for_window [class="XClock"] border pixel 0
+
+# brightness
+bindsym XF86MonBrightnessDown exec xbacklight -5
+bindsym XF86MonBrightnessUp exec xbacklight +5
