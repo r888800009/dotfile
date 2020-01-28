@@ -44,7 +44,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'airblade/vim-gitgutter'
     Plug 'valloric/youcompleteme'
-    Plug 'tpope/vim-surround'
     Plug 'scrooloose/syntastic'
     Plug 'majutsushi/tagbar'
     Plug 'sirver/ultisnips'
