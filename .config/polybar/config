@@ -8,10 +8,8 @@
 ;=====================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 background = #222
 background-alt = #222
-;foreground = ${xrdb:color7:#222}
 foreground = #bbb
 foreground-alt = #bbb
 foreground-alt-dark = #777
@@ -21,14 +19,10 @@ secondary = #a60053
 alert = #aa0017
 
 [bar/r809]
-;monitor = ${env:MONITOR:HDMI-1}
 monitor = ${env:MONITOR:fallback-value}
 bottom = true
 width = 100%
 height = 27
-;offset-x = 1%
-;offset-y = 1%
-;radius = 2.0
 fixed-center = false
 
 background = ${colors.background}
@@ -53,8 +47,7 @@ font-3 = "Anonymice Nerd Font:size=11;1"
 
 modules-left = bspwm i3 
 modules-center = 
-modules-right = filesystem xbacklight volume memory cpu wlan eth battery date xkeyboard powermenu
-
+modules-right = filesystem xbacklight volume memory cpu wlan eth battery date xkeyboard
 tray-position = right
 tray-padding = 2
 tray-background = ${colors.background}
@@ -203,10 +196,6 @@ format-connected-underline = #9f78e1
 label-connected = %essid% [%signal%%]
 
 format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
 
 ramp-signal-foreground = ${colors.foreground-alt}
 
@@ -312,59 +301,10 @@ animation-charging-6 = 
 animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
-[module/powermenu]
-type = custom/menu
-
-expand-right = true
-
-format-spacing = 1
-
-label-open = 
-label-open-foreground = ${colors.secondary}
-label-close = 
-label-close-foreground = ${colors.secondary}
-label-separator = 
-label-separator-foreground = ${colors.foreground-alt}
-
-menu-0-0 = 
-menu-0-0-exec = menu-open-1
-menu-0-1 = 
-menu-0-1-exec = menu-open-2
-menu-0-2 = 
-menu-0-2-exec = menu-open-3
-menu-0-3 = Z
-menu-0-3-exec = menu-open-4
-
-menu-1-0 = 
-menu-1-0-exec = reboot
-menu-1-1 = 
-menu-1-1-exec = menu-open-0
-
-menu-2-0 = 
-menu-2-0-exec = poweroff
-menu-2-1 = 
-menu-2-1-exec = menu-open-0
-
-
-menu-3-0 = 
-menu-3-0-exec = bspc quit 
-menu-3-1 = 
-menu-3-1-exec = menu-open-0
-
-menu-4-0 = 
-menu-4-0-exec = systemctl suspend
-menu-4-1 = 
-menu-4-1-exec = menu-open-0
-
 [settings]
 screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
 
 [global/wm]
 margin-top = 0
 margin-bottom = 0
-
 
