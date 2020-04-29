@@ -32,9 +32,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 
-# start a chromium
-bindsym $mod+n exec chromium
-bindsym $mod+Shift+n exec chromium --incognito
+# start a vivaldi-stable
+bindsym $mod+n exec vivaldi-stable
+bindsym $mod+Shift+n exec vivaldi-stable --incognito
 
 # kill focused window
 bindsym $mod+x kill
