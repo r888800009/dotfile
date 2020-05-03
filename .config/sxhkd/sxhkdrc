@@ -7,8 +7,8 @@ super + Return
 	alacritty
 
 # program launcher
-super + @space
-    rofi -show combi
+super + d
+    program-launcher
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -23,7 +23,7 @@ super + alt + Escape
 	bspc quit
 
 # close and kill
-super + {_,shift + }q
+super + {_,shift + }x
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
@@ -128,10 +128,7 @@ XF86TouchpadToggle
 
 # screenshot
 Print
-    maim -s ~/Pictures/Screenshots/select$(date +%F-%H%M%S).png --hidecursor
-
-Print + ctrl
-    maim -s --hidecursor| xclip -selection clipboard -t image/png
+    maim -s --hidecursor | xclip -selection clipboard -t image/png
 
 # brightness
 XF86MonBrightness{Down,Up}
