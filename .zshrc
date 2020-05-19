@@ -115,3 +115,6 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 
 # caps lock
 alias caps_lock="xdotool key Caps_Lock"
+
+# autojump
+source /etc/profile.d/autojump.sh
