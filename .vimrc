@@ -106,3 +106,7 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+" auto header
+autocmd BufNewFile *.py 0put =\"#!/usr/bin/env python\<nl>\"|$
+autocmd BufNewFile *.sh 0put =\"#!/bin/bash\<nl>\"|$
