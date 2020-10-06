@@ -12,3 +12,5 @@ export PATH=~/bin:~/.local/bin:$PATH
 # locale
 unset LANG
 source /etc/profile.d/locale.sh
+
+source ~/.r809env

@@ -12,6 +12,8 @@ python ~/.vim/plugged/youcompleteme/install.py --js-completer --java-completer -
 ln -s $(pwd)/.config/translate-shell ~/.config/translate-shell -f 
 ```
 
+配置環境變數 `$DOTFILE` 到 dotfile 的路徑
+
 配置rime
 ```
 ln -s $(pwd)/rime/bopomofo_tw.custom.yaml ~/.config/fcitx/rime -f

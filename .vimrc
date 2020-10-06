@@ -110,3 +110,6 @@ noremap <Right> <NOP>
 " auto header
 autocmd BufNewFile *.py 0put =\"#!/usr/bin/env python\<nl>\"|$
 autocmd BufNewFile *.sh 0put =\"#!/bin/bash\<nl>\"|$
+
+autocmd BufNewFile *.c 0r $DOTFILE/templates/template.c
+autocmd BufNewFile *.cpp 0r $DOTFILE/templates/template.cpp
