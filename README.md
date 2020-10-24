@@ -1,6 +1,12 @@
+Setup all
 ```bash
 cd dotfile
 bash setup.sh
+```
+
+Setup only zsh
+```bash
+bash setup_zsh.sh
 ```
 
 install YCM
