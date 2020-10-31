@@ -116,7 +116,7 @@ bindsym $mod+Shift+5 move container to workspace number $ws5
 bindsym XF86TouchpadToggle exec TouchpadToggle
 
 # screenshot
-bindsym Print exec maim -s --hidecursor| xclip -selection clipboard -t image/png
+bindsym Print exec flameshot gui
 
 #wifi dmenu
 bindsym $mod+Shift+w exec wifi-dmenu
