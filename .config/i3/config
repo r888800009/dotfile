@@ -32,9 +32,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 
-# start a vivaldi-stable
-bindsym $mod+n exec vivaldi-stable
-bindsym $mod+Shift+n exec vivaldi-stable --incognito
+# start a $browser
+bindsym $mod+n exec $browser
+bindsym $mod+Shift+n exec $browser --incognito
 
 # kill focused window
 bindsym $mod+x kill
