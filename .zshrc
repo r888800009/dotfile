@@ -3,6 +3,9 @@
 # The following lines were added by compinstall
 zstyle :compinstall filename '$HOME/.zshrc'
 
+# fix for Mac
+PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/opt/homebrew/opt/coreutils/libexec/gnuman:$MANPATH"
 
 autoload -Uz compinit promptinit vcs_info
 compinit
@@ -117,4 +120,9 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 alias caps_lock="xdotool key Caps_Lock"
 
 # autojump
-source /etc/profile.d/autojump.sh
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh 
+else
+  source /etc/profile.d/autojump.sh
+fi

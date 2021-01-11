@@ -14,6 +14,12 @@ elif [ -x "$(command -v apt-get)" ];then
 #    sudo apt install zsh-syntax-highlighting
   echo
   sudo apt install autojump
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  echo
+  brew install coreutils autojump 
+  compaudit 
+  sudo chown root:staff -R /opt/homebrew/share/zsh/
+  sudo chmod 755 -R /opt/homebrew/share/zsh/
 fi
 
 
