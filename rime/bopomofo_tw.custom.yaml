@@ -1,5 +1,5 @@
 patch:
-    "menu/alternative_select_keys": ASDFG
+    "menu/alternative_select_keys": QWERASDF
     schema/dependencies:
       - emoji
     reverse_lookup:

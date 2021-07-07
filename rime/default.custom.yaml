@@ -1,12 +1,13 @@
 patch:
     schema_list:
         - schema: bopomofo_tw
-    "menu/page_size": 5
+    "menu/page_size": 8
 
     ascii_composer:
-      Caps_Lock: "commit_text"
-      Shift_L: "commit_code"
-      Shift_R: "commit_code"
+      switch_key:
+        Caps_Lock: "commit_text"
+        Shift_L: "commit_code"
+        Shift_R: "commit_code"
 
     key_binder:
       bindings:

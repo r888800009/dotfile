@@ -1,0 +1,7 @@
+patch:
+  style/font_point: 18
+  app_options:
+    com.microsoft.VSCode:
+      ascii_mode: false
+    com.googlecode.iterm2:
+      ascii_mode: false
