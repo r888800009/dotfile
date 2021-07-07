@@ -120,9 +120,15 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 alias caps_lock="xdotool key Caps_Lock"
 
 # autojump
-
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh 
+  [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 else
   source /etc/profile.d/autojump.sh
 fi
+
+# ruby
+export PATH=$PATH:$(gem environment path)
+
+# google depot-tools
+export PATH=$PATH:/opt/depot_tools
+
