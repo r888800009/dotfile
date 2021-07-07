@@ -11,6 +11,9 @@ patch:
 
     key_binder:
       bindings:
+        - accept: "Shift+space"
+          when: always
+          toggle: zh_hans
         - accept: Tab
           send: "Shift+Right"
           when: composing
