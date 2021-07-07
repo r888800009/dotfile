@@ -6,8 +6,8 @@ patch:
     ascii_composer:
       switch_key:
         Caps_Lock: "commit_text"
-        Shift_L: "commit_code"
-        Shift_R: "commit_code"
+        Shift_L: "commit_text"
+        Shift_R: "commit_text"
 
     key_binder:
       bindings:

@@ -8,6 +8,10 @@ patch:
       prefix: "`"
       tips: 〔表情〕
 
+    editor:
+      bindings:
+        BackSpace: back_syllable
+
     punctuator:
         half_shape:
           "!": {commit: "！"}
