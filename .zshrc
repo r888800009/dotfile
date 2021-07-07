@@ -118,3 +118,9 @@ alias caps_lock="xdotool key Caps_Lock"
 
 # autojump
 source /etc/profile.d/autojump.sh
+
+# ruby
+export PATH=$PATH:$(gem environment path)
+
+# google depot-tools
+export PATH=$PATH:/opt/depot_tools
