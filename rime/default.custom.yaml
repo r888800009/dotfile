@@ -11,31 +11,17 @@ patch:
 
     key_binder:
       bindings:
-        - accept: "Shift+space"
-          when: always
-          toggle: zh_hans
-        - accept: Tab
-          send: "Shift+Right"
-          when: composing
-        - accept: ISO_Left_Tab
-          send: "Page_Up"
-          when: composing
-        - accept: "Shift+Tab" # not working
-          send: "Page_Up"
-          when: composing
+        - {accept: "Shift+space", toggle: zh_hans, when: always}
+        - {accept: Tab, send: "Shift+Right", when: composing}
+        - {accept: ISO_Left_Tab, send: "Shift+Right", when: composing}
+        - {accept: "Shift+ISO_Left_Tab", send: "Shift+Left", when: composing}
+        - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
 
-        - accept: "Shift+K"
-          send: Page_Up
-          when: composing
-        - accept: "Shift+J"
-          send: Page_Down
-          when: composing
-        - accept: "Shift+H"
-          send: "Shift+Left"
-          when: composing
-        - accept: "Shift+L"
-          send: "Shift+Right"
-          when: composing
+        # vim hjkl
+        - {accept: "Shift+K", send: Page_Up, when: composing}
+        - {accept: "Shift+J", send: Page_Down, when: composing}
+        - {accept: "Shift+H", send: "Shift+Left", when: composing}
+        - {accept: "Shift+L", send: "Shift+Right", when: composing}
 
         - accept: "Left"
           send: "Shift+Left"
