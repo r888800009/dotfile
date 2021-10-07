@@ -132,3 +132,5 @@ export PATH=$PATH:$(gem environment path)
 # google depot-tools
 export PATH=$PATH:/opt/depot_tools
 
+
+eval $(thefuck --alias)
