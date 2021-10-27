@@ -127,10 +127,11 @@ else
 fi
 
 # ruby
-export PATH=$PATH:$(gem environment path)
+export PATH=$PATH:$(ruby -e 'print Gem.user_dir')/bin
 
 # google depot-tools
 export PATH=$PATH:/opt/depot_tools
 
-
 eval $(thefuck --alias)
+
+alias cd-tmp='cd $(mktemp -d)'
