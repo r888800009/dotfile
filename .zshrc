@@ -135,3 +135,6 @@ export PATH=$PATH:/opt/depot_tools
 eval $(thefuck --alias)
 
 alias cd-tmp='cd $(mktemp -d)'
+
+# set git english
+alias git='LANG=en_US git'
