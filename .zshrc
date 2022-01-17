@@ -149,5 +149,8 @@ case "$OSTYPE" in
 esac
 
 # set up neovim
-alias vim="nvim"
+# check `nvim` is installed then set alias
+if [ -x "$(command -v nvim)" ]; then
+  alias vim=nvim
+fi
 export XDG_CONFIG_HOME="$HOME/.config"
