@@ -46,8 +46,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'github/copilot.vim'
     " Plug 'scrooloose/syntastic' " slow
     Plug 'majutsushi/tagbar'
-    Plug 'sirver/ultisnips'
-    Plug 'honza/vim-snippets'
     Plug 'junegunn/vim-easy-align'
     Plug 'ntpeters/vim-better-whitespace'
     Plug 'rhysd/vim-clang-format'
