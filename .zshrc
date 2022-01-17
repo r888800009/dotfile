@@ -147,3 +147,7 @@ case "$OSTYPE" in
     fi
   ;;
 esac
+
+# set up neovim
+alias vim="nvim"
+export XDG_CONFIG_HOME="$HOME/.config"
