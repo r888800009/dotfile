@@ -138,3 +138,12 @@ alias cd-tmp='cd $(mktemp -d)'
 
 # set git english
 alias git='LANG=en_US git'
+
+case "$OSTYPE" in
+  linux*)
+    # check $DISPLAY, if not set then set it to :0
+    if [ -z "$DISPLAY" ]; then
+        export DISPLAY=:0
+    fi
+  ;;
+esac
