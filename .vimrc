@@ -43,8 +43,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'airblade/vim-gitgutter'
-    Plug 'valloric/youcompleteme'
-    Plug 'scrooloose/syntastic'
+    Plug 'github/copilot.vim'
+    " Plug 'scrooloose/syntastic' " slow
     Plug 'majutsushi/tagbar'
     Plug 'sirver/ultisnips'
     Plug 'honza/vim-snippets'
