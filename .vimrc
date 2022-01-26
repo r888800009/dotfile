@@ -11,6 +11,7 @@ set hlsearch
 set cursorline
 set wildmenu
 set showcmd
+set relativenumber
 
 set t_Co=16
 if &term!="linux"
