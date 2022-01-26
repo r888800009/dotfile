@@ -46,6 +46,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'github/copilot.vim'
     " Plug 'scrooloose/syntastic' " slow
+    Plug 'bcicen/vim-vice'
     Plug 'majutsushi/tagbar'
     Plug 'junegunn/vim-easy-align'
     Plug 'ntpeters/vim-better-whitespace'
