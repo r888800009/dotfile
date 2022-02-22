@@ -121,10 +121,11 @@ alias caps_lock="xdotool key Caps_Lock"
 
 # autojump
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+  autojump_path=/opt/homebrew/etc/profile.d/autojump.sh
 else
-  source /etc/profile.d/autojump.sh
+  autojump_path=/etc/profile.d/autojump.sh
 fi
+[ -f $autojump_path ] && . $autojump_path
 
 # ruby
 export PATH=$PATH:$(ruby -e 'print Gem.user_dir')/bin
@@ -132,7 +133,10 @@ export PATH=$PATH:$(ruby -e 'print Gem.user_dir')/bin
 # google depot-tools
 export PATH=$PATH:/opt/depot_tools
 
-eval $(thefuck --alias)
+# thefuck
+if [ -x "$(command -v thefuck)" ]; then
+  eval $(thefuck --alias)
+fi
 
 alias cd-tmp='cd $(mktemp -d)'
 
