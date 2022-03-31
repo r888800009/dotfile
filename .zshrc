@@ -80,11 +80,15 @@ bindkey "^[[F" end-of-line
 bindkey "^[[1;5D" backward-word
 bindkey "^[[1;5C" forward-word
 
-#unix tools
+# unix tools
 alias ls='ls --color=auto'
-alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias dmesg='dmesg --color=always'
+
+# if not on mac
+if [[ $OSTYPE != darwin* ]]; then
+  alias diff='diff --color=auto'
+fi
 
 export LESS=-R
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
