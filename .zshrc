@@ -155,6 +155,7 @@ esac
 # set up neovim
 # check `nvim` is installed then set alias
 if [ -x "$(command -v nvim)" ]; then
-  alias vim=nvim
+  # alias vim=nvim
+  alias nvi=nvim
 fi
 export XDG_CONFIG_HOME="$HOME/.config"
