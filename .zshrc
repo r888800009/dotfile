@@ -39,7 +39,7 @@ setopt prompt_subst
 
 
 #display
-export PS1="%F{6}%n%f%F{3}>%f"
+export PS1="%F{6}%n%f%F{1}@%f%F{8}%m%f%F{3}>%f"
 
 gitPrefix="%F{1}%r/%S%f %F{4}%b%f"
 

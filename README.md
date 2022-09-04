@@ -7,6 +7,7 @@ bash setup.sh
 Setup only zsh
 ```bash
 bash setup_zsh.sh
+chsh -s /bin/zsh
 ```
 
 install YCM
