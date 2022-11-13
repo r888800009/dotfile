@@ -65,5 +65,12 @@ nativefier 'https://calendar.google.com/' --honest --single-instance -n 'Google 
 
 nativefier https://www.google.com.tw/maps/ -n 'Google Map'
 ```
+
+## setup yabai and shkd
+
+```bash
+ln -s $(pwd)/skhdrc ~/.skhdrc
+```
+
 ## problem
 - Make sure to make a symbolic link at `dotfile` repo dir.

@@ -1,0 +1,37 @@
+# define mode
+:: default : osascript -e 'display notification "normal mode" with title "skhd"'
+:: yabai @ : osascript -e 'display notification "yabai mode" with title "skhd"'
+
+# yabai mode
+# this keybind for prevent hotkey collision and (hackly) solve
+# in "yabai mode" skhd blacklist not working
+ctrl + alt + cmd - b ; yabai
+alt - b [
+  "iterm2" ~
+  "terminal" ~
+  * : skhd -k "ctrl + alt + cmd - b"
+]
+
+yabai < escape ; default
+yabai < ctrl - c ; default
+
+yabai < return : open -a 'iterm' .
+
+yabai < alt - e : yabai -m window --toggle split
+
+# (options: north, east, south, west)
+yabai < h : yabai -m window --warp west
+yabai < l : yabai -m window --warp east
+yabai < k : yabai -m window --warp north
+yabai < j : yabai -m window --warp south
+
+# yabai -m window --stack west
+yabai < shift - h : yabai -m window --stack west
+yabai < shift - l : yabai -m window --stack east
+yabai < shift - k : yabai -m window --stack north
+yabai < shift - j : yabai -m window --stack south
+
+# switch
+yabai <  tab : yabai -m window --focus stack.next
+yabai <  shift - tab : yabai -m window --focus stack.prev
+
