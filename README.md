@@ -70,6 +70,7 @@ nativefier https://www.google.com.tw/maps/ -n 'Google Map'
 
 ```bash
 ln -s $(pwd)/skhdrc ~/.skhdrc
+ln -s $(pwd)/yabairc ~/.yabairc
 ```
 
 ## problem

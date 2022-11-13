@@ -1,0 +1,8 @@
+yabai -m config layout bsp
+yabai -m config mouse_drop_action stack
+
+# rules
+yabai -m rule --add label="KeePassXC" app="^KeePassXC$" manage=off
+yabai -m rule --add label="System Preferences" app="^系統偏好設定$" title=".*" manage=off
+
+echo "yabai configuration loaded.."
