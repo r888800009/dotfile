@@ -1,6 +1,6 @@
 # define mode
-:: default : osascript -e 'display notification "normal mode" with title "skhd"'
-:: yabai @ : osascript -e 'display notification "yabai mode" with title "skhd"'
+:: default : osascript -e 'display notification "'"$(date)"' normal mode" with title "skhd"'
+:: yabai @ : osascript -e 'display notification "'"$(date)"' yabai mode" with title "skhd"'
 
 # yabai mode
 # this keybind for prevent hotkey collision and (hackly) solve
@@ -32,6 +32,7 @@ yabai < shift - k : yabai -m window --stack north
 yabai < shift - j : yabai -m window --stack south
 
 # switch
-yabai <  tab : yabai -m window --focus stack.next
-yabai <  shift - tab : yabai -m window --focus stack.prev
+yabai < tab : yabai -m window --focus stack.next
+yabai < shift - tab : yabai -m window --focus stack.prev
 
+yabai < f : yabai -m window --toggle float;
