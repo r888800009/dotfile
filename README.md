@@ -32,5 +32,38 @@ ln -s $(pwd)/rime/default.custom.yaml ~/.config/fcitx/rime -f
 ln -s $(pwd)/.config/newsboat/config ~/.config/newsboat/config -f
 ```
 
+## Using `nativefier` for Web App
+
+### Google 
+Google Tasks
+```bash
+nativefier 'https://tasks.google.com/embed/?origin=https://calendar.google.com&fullWidth=1' -i tasks.png -n 'Google Task(wrapped)' --honest --single-instance  --darwin-dark-mode-support --bookmarks-menu task.json
+```
+task.json
+```json
+{
+  "menuLabel": "test",
+  "bookmarks": [
+    {
+      "title": "task reload",
+      "url": "https://tasks.google.com/embed/?origin=https://calendar.google.com&fullWidth=1",
+      "type": "link",
+      "shortcut": "CmdOrCtrl+R"
+    }
+  ]
+}
+```
+
+```bash
+nativefier 'https://gmail.com/' --honest --single-instance
+
+nativefier 'https://keep.google.com' -n 'Google Keep' --honest --single-instance
+
+nativefier 'https://drive.google.com/drive/u/0/' --honest --single-instance
+
+nativefier 'https://calendar.google.com/' --honest --single-instance -n 'Google Calendar' --strict-internal-urls
+
+nativefier https://www.google.com.tw/maps/ -n 'Google Map'
+```
 ## problem
 - Make sure to make a symbolic link at `dotfile` repo dir.
