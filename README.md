@@ -57,13 +57,20 @@ task.json
 ```bash
 nativefier 'https://gmail.com/' --honest --single-instance
 
-nativefier 'https://keep.google.com' -n 'Google Keep' --honest --single-instance
+nativefier 'https://keep.google.com' -n 'Google Keep' --honest --single-instance --inject keep.css
 
 nativefier 'https://drive.google.com/drive/u/0/' --honest --single-instance
 
 nativefier 'https://calendar.google.com/' --honest --single-instance -n 'Google Calendar' --strict-internal-urls
 
 nativefier https://www.google.com.tw/maps/ -n 'Google Map'
+```
+
+keep.css
+```css
+html > body > div:nth-child(2) > div:nth-child(2) > div:first-child {
+  display: none !important;
+}
 ```
 
 ## setup yabai and shkd
