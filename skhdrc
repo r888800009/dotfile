@@ -32,7 +32,7 @@ yabai < shift - k : yabai -m window --stack north
 yabai < shift - j : yabai -m window --stack south
 
 # switch
-yabai < tab : yabai -m window --focus stack.next
-yabai < shift - tab : yabai -m window --focus stack.prev
+yabai < tab : yabai -m window --focus stack.next || yabai -m window --focus stack.first
+yabai < shift - tab : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
 yabai < f : yabai -m window --toggle float;
