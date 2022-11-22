@@ -33,44 +33,8 @@ ln -s $(pwd)/.config/newsboat/config ~/.config/newsboat/config -f
 ```
 
 ## Using `nativefier` for Web App
-
-### Google 
-Google Tasks
 ```bash
-nativefier 'https://tasks.google.com/embed/?origin=https://calendar.google.com&fullWidth=1' -i tasks.png -n 'Google Task(wrapped)' --honest --single-instance  --darwin-dark-mode-support --bookmarks-menu task.json --title-bar-style hidden
-```
-task.json
-```json
-{
-  "menuLabel": "test",
-  "bookmarks": [
-    {
-      "title": "task reload",
-      "url": "https://tasks.google.com/embed/?origin=https://calendar.google.com&fullWidth=1",
-      "type": "link",
-      "shortcut": "CmdOrCtrl+R"
-    }
-  ]
-}
-```
-
-```bash
-nativefier 'https://gmail.com/' --honest --single-instance
-
-nativefier 'https://keep.google.com' -n 'Google Keep' --honest --single-instance --inject keep.css --title-bar-style hidden
-
-nativefier 'https://drive.google.com/drive/u/0/' --honest --single-instance
-
-nativefier 'https://calendar.google.com/' --honest --single-instance -n 'Google Calendar' --strict-internal-urls --title-bar-style hidden
-
-nativefier https://www.google.com.tw/maps/ -n 'Google Map'
-```
-
-keep.css
-```css
-html > body > div:nth-child(2) > div:nth-child(2) > div:first-child {
-  display: none !important;
-}
+./nativefier-setup.sh
 ```
 
 ## setup yabai and shkd

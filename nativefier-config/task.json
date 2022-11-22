@@ -1,0 +1,12 @@
+{
+  "menuLabel": "test",
+  "bookmarks": [
+    {
+      "title": "task reload",
+      "url": "https://tasks.google.com/embed/?origin=https://calendar.google.com&fullWidth=1",
+      "type": "link",
+      "shortcut": "CmdOrCtrl+R"
+    }
+  ]
+}
+
