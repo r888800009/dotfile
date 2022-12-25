@@ -1,0 +1,1 @@
+trash --trash-dir /srv/.local/share/Trash/ "$FILE"
