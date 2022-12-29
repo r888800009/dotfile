@@ -30,6 +30,8 @@ autoload -z edit-command-line
 zle -N edit-command-line
 bindkey "^X^E" edit-command-line
 
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
+
 #git
 zstyle ':vcs_info:*' enable git
 precmd() {
