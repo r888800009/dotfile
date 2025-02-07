@@ -1,6 +1,32 @@
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
+# Source distribution information from /etc/os-release if it exists
+if [ -f /etc/os-release ]; then
+    . /etc/os-release
+fi
+
+case "$ID" in
+  ubuntu)
+    echo "Ubuntu detected. Starting ibus..."
+    # Set environment variables for ibus
+    export GTK_IM_MODULE=ibus
+    export QT_IM_MODULE=ibus
+    export XMODIFIERS=@im=ibus
+    # Start ibus-daemon in the background
+    # ibus-daemon -drx &
+    ;;
+  arch)
+    echo "Arch Linux detected. Starting fcitx..."
+    # Set environment variables for fcitx
+    export GTK_IM_MODULE=fcitx
+    export QT_IM_MODULE=fcitx
+    export XMODIFIERS=@im=fcitx
+    # Start fcitx; you can also use 'fcitx-autostart' if available
+    # fcitx &
+    ;;
+  *)
+    echo "Distribution not specifically handled; no input method launched."
+    ;;
+esac
+
 export EDITOR=vim
 export XDG_CONFIG_HOME="$HOME/.config"
 export _JAVA_OPTIONS='-Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true '
