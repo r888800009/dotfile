@@ -159,7 +159,7 @@ exec_always --no-startup-id r809-wm-start &
 # class                 border  backgr. text    indicator child_border
 client.focused          #4c7899 #285577 #ffffff #ffffff   #285577
 
-default_border pixel 1
+default_border pixel 0
 hide_edge_borders smart
 for_window [class="XClock"] floating enable
 for_window [class="XClock"] border pixel 0
