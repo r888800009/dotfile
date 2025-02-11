@@ -8,10 +8,10 @@
 ;=====================================================
 
 [colors]
-background = #222
-background-alt = #222
-foreground = #bbb
-foreground-alt = #bbb
+background = #000
+background-alt = #000
+foreground = #fff
+foreground-alt = #fff
 foreground-alt-dark = #777
 
 primary = #ffb52a
@@ -21,10 +21,14 @@ alert = #aa0017
 [bar/r809]
 monitor = ${env:MONITOR:fallback-value}
 dpi = ${xrdb:Xft.dpi:-1}
-bottom = true
 width = 100%
 height = 27
 fixed-center = false
+
+# auto hide `yay -S hideit.sh-git`
+# REQUIRED for us to be able to move the window
+# for https://github.com/tadly/hideIt.sh
+override-redirect = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -46,18 +50,21 @@ font-1 = "Material Icons:style=Regular:size=11"
 font-2 = "Noto Sans:size=11;1"
 font-3 = "Anonymice Nerd Font:size=11;1"
 
-modules-left = bspwm i3 
-modules-center = 
-modules-right = filesystem xbacklight volume memory cpu wlan eth battery date xkeyboard
-tray-position = right
-tray-padding = 2
-tray-background = ${colors.background}
+modules-left = bspwm i3
+modules-center =
+modules-right = tray filesystem xbacklight volume memory cpu wlan eth battery date xkeyboard
 
 ;if polybar cover fullscreen
 wm-restack = bspwm
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/tray]
+type = internal/tray
+
+format-margin = 8px
+tray-spacing = 8px
 
 [module/xwindow]
 type = internal/xwindow
