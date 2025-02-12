@@ -20,6 +20,7 @@ ln -s $(pwd)/.config/translate-shell ~/.config/translate-shell -f
 ```
 ln -s $(pwd)/rime/bopomofo_tw.custom.yaml ~/.config/fcitx/rime -f
 ln -s $(pwd)/rime/default.custom.yaml ~/.config/fcitx/rime -f
+ln -s $(pwd)/rime/bopomofo.custom.yaml ~/.config/fcitx/rime -f
 
 # fcitx5
 ln -s ~/.config/fcitx/rime/  ~/.local/share/fcitx5/rime
