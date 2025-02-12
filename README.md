@@ -10,11 +10,6 @@ bash setup_zsh.sh
 chsh -s /bin/zsh
 ```
 
-install YCM
-```
-python ~/.vim/plugged/youcompleteme/install.py --js-completer --java-completer --clang-completer
-```
-
 ``` bash
 ln -s $(pwd)/.config/translate-shell ~/.config/translate-shell -f 
 ```
@@ -25,6 +20,15 @@ ln -s $(pwd)/.config/translate-shell ~/.config/translate-shell -f
 ```
 ln -s $(pwd)/rime/bopomofo_tw.custom.yaml ~/.config/fcitx/rime -f
 ln -s $(pwd)/rime/default.custom.yaml ~/.config/fcitx/rime -f
+
+# fcitx5
+ln -s ~/.config/fcitx/rime/  ~/.local/share/fcitx5/rime
+```
+
+配置 fcitx5 主題(不支援symbolic link)
+```
+mkdir ~/.local/share/fcitx5/themes
+cp -r fcitx5-themes/macOS-light ~/.local/share/fcitx5/themes/macOS-light
 ```
 
 配置newsboat
